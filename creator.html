@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OpenClassCraft Creator is a visual desktop editor for making safe classroom blocks and interactions, previewing them, and exporting a self-contained OpenClassCraft mod."
+    />
+    <meta name="theme-color" content="#f4f1e8" />
+    <meta property="og:title" content="OpenClassCraft Creator" />
+    <meta property="og:description" content="Create classroom interactions visually and export a safe OpenClassCraft mod." />
+    <meta property="og:image" content="assets/images/workshop-garden.png" />
+    <title>Creator — OpenClassCraft</title>
+    <link rel="icon" href="assets/images/openclasscraft-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="OpenClassCraft home">
+          <img src="assets/images/openclasscraft-icon.png" alt="" />
+          <strong>OpenClassCraft</strong>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span><span class="sr-only">Open navigation</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#about">The platform</a>
+          <a href="teacher-console.html">Teacher Console</a>
+          <a href="creator.html" aria-current="page">Creator</a>
+          <a href="downloads.html">Downloads</a>
+        </nav>
+        <a class="button button-small button-primary" href="downloads.html">Download</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="product-hero creator-product-hero">
+        <div class="container product-hero-layout">
+          <div>
+            <h1>Create classroom interactions without starting from Lua.</h1>
+            <p>
+              OpenClassCraft Creator is a separate visual desktop editor. Teachers and creators can connect
+              draggable blocks, preview a classroom object, and export a self-contained mod built from a deliberately
+              limited set of safe actions.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#workflow">See how Creator works</a>
+              <a class="button button-secondary" href="https://github.com/GP-commits/OpenClassCraft" target="_blank" rel="noreferrer">View the project source</a>
+            </div>
+          </div>
+          <aside class="product-summary" aria-label="OpenClassCraft Creator summary">
+            <h2>OpenClassCraft Creator</h2>
+            <p>A visual mod editor for classroom blocks and controlled interactions.</p>
+            <dl>
+              <div><dt>Editor</dt><dd>Draggable visual blocks</dd></div>
+              <div><dt>Preview</dt><dd>Style and behavior</dd></div>
+              <div><dt>Output</dt><dd>Self-contained mod folder</dd></div>
+              <div><dt>Scope</dt><dd>Safe palette actions only</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section product-demo-section" id="overview">
+        <div class="container">
+          <div class="product-heading">
+            <h2>Move from an idea to an in-world interaction visually.</h2>
+            <p>
+              Choose when something should happen, connect the permitted actions and logic, then preview the
+              classroom block before exporting it.
+            </p>
+          </div>
+
+          <div class="app-window creator-app-preview" aria-label="OpenClassCraft Creator visual editor example">
+            <div class="creator-app-bar"><strong>OpenClassCraft Creator</strong><span>Project: Classroom Adventure</span><b>Export Mod</b></div>
+            <div class="creator-app-layout">
+              <aside class="creator-palette"><strong>Events</strong><span>When placed</span><span>When player is near</span><strong>Actions</strong><span>Show message</span><span>Give item</span><span>Change block</span><span>Wait</span><strong>Logic</strong><span>If / then</span><span>Nearby sensor</span><span>Repeat</span></aside>
+              <div class="creator-canvas">
+                <h3>Build behavior</h3>
+                <div class="large-block-stack"><span>when a player comes near</span><span>show message “Welcome to the habitat study”</span><span>if nearby sensor finds “water”</span><span>give item “field notebook”</span><span>change this block to “garden”</span></div>
+              </div>
+              <aside class="creator-live-preview">
+                <h3>Live preview</h3>
+                <div><strong>Habitat Guide</strong><span>Garden style</span></div>
+                <p><strong>Block name</strong><span>Habitat Guide</span></p>
+                <p><strong>Category</strong><span>Science</span></p>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section capability-section">
+        <div class="container">
+          <div class="product-heading">
+            <h2>A focused set of building blocks.</h2>
+            <p>The palette is intentionally understandable and limited, so the exported behavior stays inside the actions the editor exposes.</p>
+          </div>
+          <div class="capability-rows">
+            <article><h3>Choose an event</h3><p>Begin when the classroom block is placed or when a player comes near it in the world.</p></article>
+            <article><h3>Add visible actions</h3><p>Show a message, give an item, wait, change the block, or update a project variable.</p></article>
+            <article><h3>Use logic and repetition</h3><p>Add if conditions, nearby sensors, comparisons, repeat blocks, and variables to make the interaction respond.</p></article>
+            <article><h3>Preview the classroom object</h3><p>Name the block, choose a garden, stone, wood, or glass style, and organize it under Classroom, Science, or Activity.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product-workflow" id="workflow">
+        <div class="container">
+          <div class="product-heading">
+            <h2>Build, preview, export, and use.</h2>
+            <p>Creator handles the project files so the educator can concentrate on what students will encounter.</p>
+          </div>
+          <ol class="workflow-rows">
+            <li><span>1</span><div><h3>Name the classroom project</h3><p>Choose a clear block name, category, and visual style for the activity.</p></div></li>
+            <li><span>2</span><div><h3>Connect the behavior blocks</h3><p>Drag an event into the workspace and place actions, logic, loops, or variables beneath it.</p></div></li>
+            <li><span>3</span><div><h3>Check the live preview</h3><p>Review the classroom object and make sure its label and style fit the lesson.</p></div></li>
+            <li><span>4</span><div><h3>Export the OpenClassCraft mod</h3><p>Creator writes the mod configuration, project data, and generated Lua into one self-contained folder.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="privacy-section creator-safety">
+        <div class="container privacy-layout">
+          <div>
+            <h2>Safe by keeping the available actions explicit.</h2>
+            <p>
+              Creator does not accept arbitrary code in the visual project. It generates behavior only from the
+              events, actions, logic, loops, sensors, and variables that are available in its palette.
+            </p>
+          </div>
+          <ul>
+            <li><strong>No blank code editor</strong><span>The workflow begins with understandable visual blocks.</span></li>
+            <li><strong>Controlled action set</strong><span>Projects stay within the behavior the palette can express.</span></li>
+            <li><strong>Portable output</strong><span>Each export is a self-contained OpenClassCraft mod folder.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="download-contact">
+        <div class="container contact-layout">
+          <div><h2>Create a classroom interaction of your own.</h2><p>OpenClassCraft Creator is included in the project source and is currently developed as a Windows desktop companion.</p></div>
+          <a class="button button-light" href="mailto:sivadarshpdinesh@gmail.com?subject=OpenClassCraft%20Creator">Ask about OpenClassCraft Creator</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div class="footer-intro"><a class="brand footer-brand" href="index.html"><img src="assets/images/openclasscraft-icon.png" alt="" /><strong>OpenClassCraft</strong></a><p>An open-source classroom platform for shared lessons, making, exploration, and learning together.</p></div>
+        <nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="teacher-console.html">Teacher Console</a><a href="creator.html">Creator</a><a href="downloads.html">Downloads</a></nav>
+        <nav aria-label="Project links"><a href="https://github.com/GP-commits/OpenClassCraft" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.luanti.org/" target="_blank" rel="noreferrer">Luanti</a><a href="mailto:sivadarshpdinesh@gmail.com">Contact by email</a></nav>
+      </div>
+      <div class="container footer-bottom"><span>© 2026 OpenClassCraft. Created by Sivadarsh P Dinesh.</span><span>Free and open source.</span></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OpenClassCraft Teacher Console helps educators plan lessons, organize groups, connect local classroom worlds, track checkpoints, and keep records on their own computer."
+    />
+    <meta name="theme-color" content="#f4f1e8" />
+    <meta property="og:title" content="OpenClassCraft Teacher Console" />
+    <meta property="og:description" content="Plan the class, bring the lesson into a local world, and review progress afterwards." />
+    <meta property="og:image" content="assets/images/openclasscraft-campus.png" />
+    <title>Teacher Console — OpenClassCraft</title>
+    <link rel="icon" href="assets/images/openclasscraft-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="OpenClassCraft home">
+          <img src="assets/images/openclasscraft-icon.png" alt="" />
+          <strong>OpenClassCraft</strong>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span><span class="sr-only">Open navigation</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#about">The platform</a>
+          <a href="teacher-console.html" aria-current="page">Teacher Console</a>
+          <a href="creator.html">Creator</a>
+          <a href="downloads.html">Downloads</a>
+        </nav>
+        <a class="button button-small button-primary" href="downloads.html">Download</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="product-hero">
+        <div class="container product-hero-layout">
+          <div>
+            <h1>Plan the class outside the world. Bring the lesson in when it is ready.</h1>
+            <p>
+              OpenClassCraft Teacher Console is a separate local desktop application for lesson planning,
+              classroom organization, progress records, and assessment. It gives educators a practical workspace
+              before, during, and after a shared OpenClassCraft session.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#workflow">See the classroom workflow</a>
+              <a class="button button-secondary" href="https://github.com/GP-commits/OpenClassCraft" target="_blank" rel="noreferrer">View the project source</a>
+            </div>
+          </div>
+          <aside class="product-summary" aria-label="Teacher Console summary">
+            <h2>Teacher Console</h2>
+            <p>A local educator workspace that complements the shared game world.</p>
+            <dl>
+              <div><dt>Planning</dt><dd>Lessons and checkpoints</dd></div>
+              <div><dt>Classroom</dt><dd>Students, groups, and worlds</dd></div>
+              <div><dt>Review</dt><dd>Notes and CSV reports</dd></div>
+              <div><dt>Data location</dt><dd>Teacher’s computer</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section product-demo-section" id="overview">
+        <div class="container">
+          <div class="product-heading">
+            <h2>One place for the work around the live lesson.</h2>
+            <p>
+              Prepare the activity before students join, keep the selected lesson connected to a local host, and
+              return to clear records when the session ends.
+            </p>
+          </div>
+
+          <div class="app-window teacher-app-preview" aria-label="Teacher Console classroom interface example">
+            <aside class="app-sidebar">
+              <strong>OpenClassCraft<br />Teacher Console</strong>
+              <nav aria-label="Teacher Console preview navigation"><span>Dashboard</span><span class="selected">Classroom</span><span>Lessons</span><span>Students</span><span>Reports</span></nav>
+              <p><strong>LAN classroom</strong><span>Ready for local worlds</span></p>
+            </aside>
+            <div class="app-content">
+              <div class="app-titlebar"><h3>Classroom</h3><span>Local data ready</span></div>
+              <div class="app-stat-grid">
+                <article><strong>Greenfield School</strong><span>Ms. Rivera · Year 7</span></article>
+                <article><strong>4 groups</strong><span>Cedar, River, Hill, Grove</span></article>
+                <article><strong>Bridge active</strong><span>Rainforest Field Study</span></article>
+              </div>
+              <div class="app-table">
+                <div><strong>Group</strong><strong>Lesson</strong><strong>Starter world</strong></div>
+                <div><span>Cedar</span><span>Rainforest Field Study</span><span>Habitat Study</span></div>
+                <div><span>River</span><span>Build a Water Filter</span><span>River Laboratory</span></div>
+                <div><span>Hill</span><span>Design a Public Space</span><span>Town Workshop</span></div>
+              </div>
+              <div class="app-actions"><span>Choose lesson</span><span>Export settings</span><strong>Start bridge</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section capability-section">
+        <div class="container">
+          <div class="product-heading">
+            <h2>Built around real classroom tasks.</h2>
+            <p>The Console handles the organization that should not have to happen inside the student-facing world.</p>
+          </div>
+          <div class="capability-rows">
+            <article><h3>Prepare lessons</h3><p>Create a title, choose a subject, write learning objectives, and define checkpoints students can complete during the activity.</p></article>
+            <article><h3>Organize the class</h3><p>Maintain student and group lists, import a CSV class list, and assign each group to a lesson and starter world.</p></article>
+            <article><h3>Follow learning progress</h3><p>Track completed checkpoints, add teacher notes, and export a straightforward CSV report after the session.</p></article>
+            <article><h3>Back up local records</h3><p>Save and restore JSON backups without depending on a cloud account or an external classroom service.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product-workflow" id="workflow">
+        <div class="container">
+          <div class="product-heading">
+            <h2>From lesson plan to local classroom world.</h2>
+            <p>The bridge is designed for a teacher hosting OpenClassCraft and the Console on the same computer.</p>
+          </div>
+          <ol class="workflow-rows">
+            <li><span>1</span><div><h3>Create the lesson</h3><p>Add the learning objective and the checkpoints that matter for this activity.</p></div></li>
+            <li><span>2</span><div><h3>Assign a group and world</h3><p>Choose which class group receives the lesson and where their activity begins.</p></div></li>
+            <li><span>3</span><div><h3>Start the local lesson bridge</h3><p>Export the generated settings, add them to the teacher host, and synchronize the active lesson.</p></div></li>
+            <li><span>4</span><div><h3>Review and export</h3><p>Record completed checkpoints, add notes, and export the class report when the activity is finished.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="privacy-section">
+        <div class="container privacy-layout">
+          <div>
+            <h2>Designed to keep classroom data local.</h2>
+            <p>
+              The bridge listens only on the teacher’s own computer and requires a generated token. It shares the
+              selected lesson plan with the local OpenClassCraft host; it does not send student lists, reports, or
+              backups into the game world.
+            </p>
+          </div>
+          <ul>
+            <li><strong>Loopback-only bridge</strong><span>Listens on 127.0.0.1 rather than the wider network.</span></li>
+            <li><strong>Limited lesson payload</strong><span>Only the active plan and checkpoint events are exchanged.</span></li>
+            <li><strong>Local records</strong><span>Student details, notes, reports, and backups remain on the teacher’s computer.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="download-contact">
+        <div class="container contact-layout">
+          <div><h2>Bring a better planning workflow to your classroom.</h2><p>Teacher Console is included in the OpenClassCraft project source and is currently developed as a Windows desktop companion.</p></div>
+          <a class="button button-light" href="mailto:sivadarshpdinesh@gmail.com?subject=OpenClassCraft%20Teacher%20Console">Ask about Teacher Console</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div class="footer-intro"><a class="brand footer-brand" href="index.html"><img src="assets/images/openclasscraft-icon.png" alt="" /><strong>OpenClassCraft</strong></a><p>An open-source classroom platform for shared lessons, making, exploration, and learning together.</p></div>
+        <nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="teacher-console.html">Teacher Console</a><a href="creator.html">Creator</a><a href="downloads.html">Downloads</a></nav>
+        <nav aria-label="Project links"><a href="https://github.com/GP-commits/OpenClassCraft" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.luanti.org/" target="_blank" rel="noreferrer">Luanti</a><a href="mailto:sivadarshpdinesh@gmail.com">Contact by email</a></nav>
+      </div>
+      <div class="container footer-bottom"><span>© 2026 OpenClassCraft. Created by Sivadarsh P Dinesh.</span><span>Free and open source.</span></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

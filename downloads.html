@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Download OpenClassCraft for Windows and find setup directions for Linux, macOS, Android, BSD, and source builds."
+    />
+    <meta name="theme-color" content="#f4f1e8" />
+    <meta property="og:title" content="Download OpenClassCraft" />
+    <meta
+      property="og:description"
+      content="OpenClassCraft downloads, installation directions, checksums, and version history."
+    />
+    <meta property="og:image" content="assets/images/openclasscraft-campus.png" />
+    <title>Download OpenClassCraft</title>
+    <link rel="icon" href="assets/images/openclasscraft-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="OpenClassCraft home">
+          <img src="assets/images/openclasscraft-icon.png" alt="" />
+          <strong>OpenClassCraft</strong>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Open navigation</span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="downloads.html" aria-current="page">Downloads</a>
+          <a href="teacher-console.html">Teacher Console</a>
+          <a href="creator.html">Creator</a>
+          <a href="#installation">Installation</a>
+        </nav>
+
+        <a
+          class="button button-small button-primary"
+          href="https://github.com/GP-commits/OpenClassCraft/releases/download/openclasscraft-windows-2026-07-19/Windows-Build.zip"
+        >Download for Windows</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="download-hero">
+        <div class="container download-hero-layout">
+          <div>
+            <h1>Download OpenClassCraft</h1>
+            <p>
+              The ready-to-play build is currently available for Windows. Linux, macOS, Android, and BSD users can
+              use the OpenClassCraft build files with Luanti or compile a native package from source.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="button button-primary"
+                href="https://github.com/GP-commits/OpenClassCraft/releases/download/openclasscraft-windows-2026-07-19/Windows-Build.zip"
+              >Download Windows build</a>
+              <a class="button button-secondary" href="#platforms">See every operating system</a>
+            </div>
+          </div>
+
+          <aside class="current-release" aria-label="Current release">
+            <h2>Current published release</h2>
+            <p><strong>OpenClassCraft Windows Release</strong></p>
+            <dl>
+              <div><dt>Published</dt><dd>19 July 2026</dd></div>
+              <div><dt>Windows archive</dt><dd>36.5 MB</dd></div>
+              <div><dt>Build files</dt><dd>48.7 MB</dd></div>
+              <div><dt>Status</dt><dd>Stable release</dd></div>
+            </dl>
+            <a href="https://github.com/GP-commits/OpenClassCraft/releases/tag/openclasscraft-windows-2026-07-19" target="_blank" rel="noreferrer">Read the release notes</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section platform-section" id="platforms">
+        <div class="container">
+          <div class="download-heading">
+            <h2>Choose your operating system</h2>
+            <p>
+              Only Windows has a packaged OpenClassCraft executable today. Every other row clearly shows the manual
+              Luanti or source-build route until native packages are published.
+            </p>
+          </div>
+
+          <div class="platform-list">
+            <article class="platform-row">
+              <div><h3>Windows</h3><p>Windows 8, 8.1, 10, and 11</p></div>
+              <div><strong>Ready-to-play package available</strong><p>Download the archive, extract it, and run the included OpenClassCraft executable.</p></div>
+              <div class="platform-actions">
+                <a class="button button-primary" href="https://github.com/GP-commits/OpenClassCraft/releases/download/openclasscraft-windows-2026-07-19/Windows-Build.zip">Download Windows build</a>
+                <a href="#windows-install">Read Windows directions</a>
+              </div>
+            </article>
+
+            <article class="platform-row">
+              <div><h3>Linux</h3><p>Ubuntu, Debian, Fedora, Arch, and others</p></div>
+              <div><strong>Manual setup or source build</strong><p>Install Luanti for your distribution, then add the OpenClassCraft game files or compile the project.</p></div>
+              <div class="platform-actions">
+                <a class="button button-secondary" href="https://www.luanti.org/en/downloads/" target="_blank" rel="noreferrer">Choose a Linux package</a>
+                <a href="#manual-install">Read manual directions</a>
+              </div>
+            </article>
+
+            <article class="platform-row">
+              <div><h3>macOS</h3><p>Apple Silicon and Intel</p></div>
+              <div><strong>Manual setup or source build</strong><p>Install the signed Luanti app, then add the OpenClassCraft game files. A native OpenClassCraft app is not published yet.</p></div>
+              <div class="platform-actions">
+                <a class="button button-secondary" href="https://www.luanti.org/en/downloads/" target="_blank" rel="noreferrer">Download Luanti for macOS</a>
+                <a href="#manual-install">Read manual directions</a>
+              </div>
+            </article>
+
+            <article class="platform-row">
+              <div><h3>Android</h3><p>Android 6 or later recommended</p></div>
+              <div><strong>Manual game-file setup</strong><p>Install the official Luanti app and add the OpenClassCraft game folder. A standalone OpenClassCraft APK is not published yet.</p></div>
+              <div class="platform-actions">
+                <a class="button button-secondary" href="https://www.luanti.org/en/downloads/" target="_blank" rel="noreferrer">Download Luanti for Android</a>
+                <a href="#android-install">Read Android directions</a>
+              </div>
+            </article>
+
+            <article class="platform-row">
+              <div><h3>BSD and other systems</h3><p>FreeBSD, OpenBSD, NetBSD, and source builds</p></div>
+              <div><strong>Package manager or source build</strong><p>Install Luanti from your system packages, ports, or pkgsrc, then add the game files.</p></div>
+              <div class="platform-actions">
+                <a class="button button-secondary" href="https://www.luanti.org/en/downloads/" target="_blank" rel="noreferrer">View Luanti packages</a>
+                <a href="#manual-install">Read manual directions</a>
+              </div>
+            </article>
+
+            <article class="platform-row">
+              <div><h3>iPhone and iPad</h3><p>iOS and iPadOS</p></div>
+              <div><strong>No supported package is published</strong><p>OpenClassCraft and the official Luanti download page do not currently provide an iOS package.</p></div>
+              <div class="platform-actions">
+                <a class="button button-secondary" href="https://github.com/GP-commits/OpenClassCraft/releases" target="_blank" rel="noreferrer">Watch future releases</a>
+                <a href="mailto:sivadarshpdinesh@gmail.com?subject=OpenClassCraft%20iOS%20availability">Ask about iOS support</a>
+              </div>
+            </article>
+
+            <article class="platform-row">
+              <div><h3>Source and build files</h3><p>For developers on any operating system</p></div>
+              <div><strong>Release-specific project files</strong><p>Use the published build archive to inspect the project, compile a native package, or install the game content manually.</p></div>
+              <div class="platform-actions">
+                <a class="button button-secondary" href="https://github.com/GP-commits/OpenClassCraft/releases/download/openclasscraft-windows-2026-07-19/Build-Files.zip">Download build files</a>
+                <a href="https://github.com/GP-commits/OpenClassCraft" target="_blank" rel="noreferrer">Browse the repository</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section installation" id="installation">
+        <div class="container">
+          <div class="download-heading">
+            <h2>Installation directions</h2>
+            <p>Keep the extracted folders intact. Moving or deleting runtime files can prevent OpenClassCraft from starting.</p>
+          </div>
+
+          <div class="install-guides">
+            <article id="windows-install">
+              <h3>Windows ready-to-play build</h3>
+              <ol>
+                <li>Download <a href="https://github.com/GP-commits/OpenClassCraft/releases/download/openclasscraft-windows-2026-07-19/Windows-Build.zip">Windows-Build.zip</a>.</li>
+                <li>Extract the entire ZIP archive to a normal folder such as Documents or Desktop.</li>
+                <li>Open the extracted folder, then open <code>bin\Release</code>.</li>
+                <li>Run <code>openclasscraft.exe</code>.</li>
+                <li>Keep the DLL files beside the executable. Do not run the executable from inside the ZIP preview.</li>
+              </ol>
+            </article>
+
+            <article id="manual-install">
+              <h3>Linux, macOS, and BSD manual setup</h3>
+              <ol>
+                <li>Install the current stable version of <a href="https://www.luanti.org/en/downloads/" target="_blank" rel="noreferrer">Luanti for your operating system</a>.</li>
+                <li>Download the <a href="https://github.com/GP-commits/OpenClassCraft/releases/download/openclasscraft-windows-2026-07-19/Build-Files.zip">OpenClassCraft build files</a> and extract them.</li>
+                <li>Inside the extracted project, locate <code>games/luanti_edu</code>.</li>
+                <li>Open Luanti, go to About, and choose <strong>Open User Data Directory</strong>. Create a <code>games</code> folder there if one does not exist.</li>
+                <li>Copy the complete <code>luanti_edu</code> folder into that <code>games</code> folder, then restart Luanti.</li>
+                <li>Select OpenClassCraft when creating a world.</li>
+              </ol>
+              <p class="install-note">This manual route is useful for testing the game content. The complete branded application and custom engine experience may require compiling the supplied build files.</p>
+            </article>
+
+            <article id="android-install">
+              <h3>Android manual setup</h3>
+              <ol>
+                <li>Install Luanti from the <a href="https://www.luanti.org/en/downloads/" target="_blank" rel="noreferrer">official Android download choices</a>.</li>
+                <li>Download and extract <a href="https://github.com/GP-commits/OpenClassCraft/releases/download/openclasscraft-windows-2026-07-19/Build-Files.zip">Build-Files.zip</a>.</li>
+                <li>Copy <code>games/luanti_edu</code> into the Luanti user-data <code>games</code> folder using a file manager with storage access.</li>
+                <li>Restart Luanti and select OpenClassCraft when creating a world.</li>
+              </ol>
+              <p class="install-note">Android storage restrictions differ by device. If the app data folder cannot be accessed, a standalone APK or ContentDB package will be needed; neither is currently published.</p>
+            </article>
+
+            <article>
+              <h3>Explore your first classroom world</h3>
+              <ol>
+                <li>Start OpenClassCraft and create or select a world.</li>
+                <li>Open the inventory and choose from the Classroom, Chemistry, Creative, or Coding tools.</li>
+                <li>Place a guide NPC, board, lesson planner, chemistry lab, or checkpoint to shape an activity.</li>
+                <li>Build and explore together; use visual programming and the robot when they support the lesson.</li>
+              </ol>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section companion-tools-download" id="companion-tools">
+        <div class="container">
+          <div class="download-heading">
+            <h2>New desktop companion tools</h2>
+            <p>
+              Teacher Console and Creator are now part of the project source. Separate packaged downloads have not
+              yet been added to the published release, so their status is shown clearly below.
+            </p>
+          </div>
+          <div class="platform-list">
+            <article class="platform-row">
+              <div><h3>Teacher Console</h3><p>Local educator workspace</p></div>
+              <div><strong>Source available; packaged app pending</strong><p>Plan lessons, organize groups, connect the active lesson to a local world, and review progress.</p></div>
+              <div class="platform-actions"><a class="button button-secondary" href="teacher-console.html">Explore Teacher Console</a><a href="https://github.com/GP-commits/OpenClassCraft" target="_blank" rel="noreferrer">View project source</a></div>
+            </article>
+            <article class="platform-row">
+              <div><h3>Creator</h3><p>Visual classroom mod editor</p></div>
+              <div><strong>Source available; packaged app pending</strong><p>Build safe classroom interactions with visual blocks, preview them, and export a self-contained mod.</p></div>
+              <div class="platform-actions"><a class="button button-secondary" href="creator.html">Explore Creator</a><a href="https://github.com/GP-commits/OpenClassCraft" target="_blank" rel="noreferrer">View project source</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section versions" id="versions">
+        <div class="container">
+          <div class="download-heading">
+            <h2>Version history</h2>
+            <p>The version list below reflects the releases published in the official GitHub repository as checked on 3 August 2026.</p>
+          </div>
+
+          <div class="version-table-wrap">
+            <table class="version-table">
+              <thead><tr><th>Release</th><th>Date</th><th>Platform</th><th>Files</th><th>Notes</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><strong>OpenClassCraft Windows Release</strong><span>openclasscraft-windows-2026-07-19</span></td>
+                  <td>19 July 2026</td>
+                  <td>Windows; build files for other systems</td>
+                  <td><a href="https://github.com/GP-commits/OpenClassCraft/releases/download/openclasscraft-windows-2026-07-19/Windows-Build.zip">Windows build</a><a href="https://github.com/GP-commits/OpenClassCraft/releases/download/openclasscraft-windows-2026-07-19/Build-Files.zip">Build files</a></td>
+                  <td><a href="https://github.com/GP-commits/OpenClassCraft/releases/tag/openclasscraft-windows-2026-07-19" target="_blank" rel="noreferrer">Release page</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="checksums">
+            <h3>SHA-256 checksums</h3>
+            <p><strong>Windows-Build.zip</strong><code>F2063CC061E44666640B7DC63F518DA4EC87CF60C7A81B6D60CA9F611EBBECF3</code></p>
+            <p><strong>Build-Files.zip</strong><code>6161BFC36503FDD6EFD65BC493B5D7D18F0AAB088863ABC74390E3BD9CEFFC19</code></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="download-contact" id="contact">
+        <div class="container contact-layout">
+          <div><h2>Need help installing OpenClassCraft?</h2><p>Include your operating system, device type, and any error message in your email.</p></div>
+          <a class="button button-light" href="mailto:sivadarshpdinesh@gmail.com?subject=OpenClassCraft%20installation%20help">sivadarshpdinesh@gmail.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div class="footer-intro">
+          <a class="brand footer-brand" href="index.html"><img src="assets/images/openclasscraft-icon.png" alt="" /><strong>OpenClassCraft</strong></a>
+          <p>An open-source classroom platform for shared lessons, making, exploration, and learning together.</p>
+        </div>
+        <nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="teacher-console.html">Teacher Console</a><a href="creator.html">Creator</a><a href="#versions">Versions</a></nav>
+        <nav aria-label="Project links"><a href="https://github.com/GP-commits/OpenClassCraft" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.luanti.org/en/downloads/" target="_blank" rel="noreferrer">Luanti downloads</a><a href="mailto:sivadarshpdinesh@gmail.com">Contact by email</a></nav>
+      </div>
+      <div class="container footer-bottom"><span>© 2026 OpenClassCraft. Created by Sivadarsh P Dinesh.</span><span>Free and open source.</span></div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
